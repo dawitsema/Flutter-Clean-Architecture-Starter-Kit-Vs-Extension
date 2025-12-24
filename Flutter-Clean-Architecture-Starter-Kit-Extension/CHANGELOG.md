@@ -1,31 +1,49 @@
-# Change Log
+# Changelog
 
-All notable changes to the "Flutter Clean Architecture Starter Kit" extension are documented here.
+All notable changes to this project will be documented in this file.
 
-This project adheres to [Keep a Changelog](http://keepachangelog.com/).
-
-## [0.0.3] - 2024-12-27
+## [1.1.0] - 2025-12-24
 
 ### Added
 
-- Full scaffolding for `core`, `data`, `domain`, and `presentation` layers.
-- Command Palette integration for feature creation.
-- Improved error handling and detailed documentation.
+- Support for **Riverpod** state management pattern
+  - Riverpod provider templates with FutureProvider and StateNotifier
+  - ConsumerWidget screen templates
+  - Automatic provider setup with repository injection
+- Support for **Provider** state management pattern
+  - ChangeNotifier provider templates with CRUD operations
+  - Consumer widget screen implementation
+  - Full lifecycle management (isLoading, error states)
+- **State Management Pattern Selection**
+
+  - Interactive quick pick menu when creating features
+  - Support for BLoC, Riverpod, and Provider
+  - Pattern-specific boilerplate generation
+
+- **Enhanced Documentation**
+  - Comprehensive README with all three patterns
+  - Pattern-specific folder structures
+  - Usage examples for each pattern
+  - Dependencies guide
 
 ### Changed
 
-- Refined folder structure generation based on feedback.
+- Modified `extension.ts` to support pattern selection
+- Updated command palette with clearer descriptions
+- Improved error handling and user feedback
 
-### Fixed
+### Maintained
 
-- Resolved issues with `core` folder creation and file hierarchy.
+- Original BLoC pattern (unchanged)
+- MIT License compliance
+- Original author credits
+- All existing functionality
 
----
+## [1.0.0] - Original Release
 
-## [0.0.2-alpha] - 2024-12-24
+### Features
 
-- Added initial scaffolding for `core` and dynamic feature folders.
-
-## [0.0.1-alpha] - 2024-12-23
-
-- Basic extension setup and command execution testing.
+- BLoC pattern scaffolding
+- Clean Architecture folder structure
+- Boilerplate code generation
+- Remove feature functionality
